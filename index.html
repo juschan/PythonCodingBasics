@@ -27,14 +27,12 @@
     <!-- so must use "layout: false "in the next slide after any slide with template: template-that-is-a-layout -->
     <!-- conclusion: do not use template, use class: mystuff -->
     
-    # PYTHON CODING
-    An introduction to Python programming for programmers
+    # PYTHON CODING BASICS
+    A *short* introduction to Python programming for programmers
   
     
     .footnote[
-    
     ]
-    
 
     ---
     .title-left-column[
@@ -47,19 +45,12 @@
 
     * Getting Started - 4 ways to run Python
 
-    ### Things to cover
-    * 4 ways to run Python - interpreter, command-line, ide (spyder), jupyter notebook
-    * one case study
-      * import libraries, 2 types
-      * comments
-      * variables
-      * if else
-      * loops
-      * lists, dictionaries, tuples
-      * 
-    * help, debugging - print, type, help
+    * Basic Python Syntax
 
-    ---
+    * Examples
+
+    * Next Steps
+
     ---
     .title-left-column[
     ## Ground Rules
@@ -77,9 +68,9 @@
       * Try to help each other first when you're having problems
     
     * Depending on your background, some of the contents may not be relevant to you
-      * That's okay. 
+      * That's okay :)
 
-    ---
+    * Searching for answers on Google, Stack Overflow is allowed.
 
     ---
 
@@ -89,34 +80,8 @@
     Tell us about yourself:
     1. Name
     2. Department
-    3. What programming language you already well
+    3. What programming language you already know?
     4. Why have you come for the workshop?
-
-    ---
-
-    ---
-    .title-left-column[
-    ## Objectives
-    ]
-
-    * Background to Python Programming language <br />
-
-    * Things you should know about Python before beginning <br />
-    * ads
-
-    ### Things to cover
-    * 4 ways to run Python - interpreter, command-line, ide (spyder), jupyter notebook
-    * one case study
-      * import libraries, 2 types
-      * comments
-      * variables
-      * if else
-      * loops
-      * lists, dictionaries, tuples
-      * 
-    * help, debugging - print, type, 
-
-    ---
 
     ---
 
@@ -125,15 +90,15 @@
     ]
 
     .content-right-column[
-    * Created by Guido Van Rossum - Python's Benovelent Dictator for Life
+    * Created by Guido Van Rossum - Python's **Benovelent Dictator for Life**
 
     * First released in 1991 as a successor to ABC programming language 
 
     * Emphasis on code readability
 
     * Characteristics:
-      * indentation
-      * dynamically-typed
+      * indentation for code blocks
+      * dynamically-typed and implicit
       * garbage-collected
       * comprehensive standard library - 'batteries included'
       * multiple programming paradigms: 
@@ -150,7 +115,7 @@
     ]
     
     .content-left-column[
-    1. Interpreter - Open "Anaconda Prompt"
+    1. Interactive interpreter - Open "Anaconda Prompt"
       ```
       cd d:
       mkdir testbed
@@ -175,492 +140,52 @@
       jupyter notebook
       ```
     ]
+    ---
+    class: center, middle
+      
+    # BASIC PYTHON SYNTAX
+    Continue using Jupyter Notebook
 
     ---
     .title-left-column[
-    ## What is it?
+    ## Next Steps...
     ]
     
     .content-right-column[
+    Next steps in your learning:
+
+    * Take up a course (eg. NUS-ISS, Udemy)
+
+    * Explore the documentation, online examples, get a Python book from the library
     
-    If your ideal slideshow creation workflow contains any of the following steps:
-    
-    - Just write what's on your mind
-    
-    - Do some basic styling
-    
-    - Easily collaborate with others
-    
-    - Share with and show to everyone
-    
-    Then remark might be perfect for your next.red[*] slideshow!
-    
-    .footnote[ .red[*] You probably want to convert existing slideshows as well ]
+    * Apply Python in a project (eg. convert Excel to Python using pandas library)
+      * Speak to me if you need some direction, although I can't do the work for you!
+
+    * Join Python User Group and attend Python Meetups
+      * Make some noise if you want it held in Tampines!
+
+    * Provide feedback:
+      * Microsoft Forms - Feedback for slides
+      * Python User Group Workplace - post your comments!
+      * Write to the team (myself, Michelle, Theresa)
+
+    * Write to my bosses :)
+      * Low Boon Yong, Chiew Ai Chin
     ]
-    
     ---
-    
     .title-left-column[
-    ## What is it?
-    ## Why use it?
+    ## Last words
     ]
     
     .content-right-column[
-    
-    As the slideshow is expressed using Markdown, you may:
-    
-    - Focus on the content, expressing yourself in next to plain text not worrying what flashy graphics and disturbing effects to put where
-    
-    As the slideshow is actually an HTML document, you may:
-    
-    - Display it in any decent browser
-    
-    - Style it using regular CSS, just like any other HTML content
-    
-    - Use it offline!
-    
-    As the slideshow is contained in a plain file, you may:
-    
-    - Store it wherever you like; on your computer, hosted from your Dropbox, hosted on Github Pages alongside the stuff you're presenting...
-    
-    - Easily collaborate with others, keeping track of changes using your favourite SCM tool, like Git or Mercurial
+    * Many thanks to the organisers
+      * Michelle, Theresa
+
+    * Thank you for attending the workshop and your participation!
     ]
     
     ---
-    
-    template: inverse
-    
-    ## How does it work, then?
-    
-    ---
-    
-    name: how
-    
-    .title-left-column[
-    ## How does it work?
-    ### - Markdown
-    ]
-    
-    .content-right-column[
-    
-    A Markdown-formatted chunk of text is transformed into individual slides by JavaScript running in the browser:
-    
-    ```remark
-    # Slide 1
-    This is slide 1
-    
-    ---
-    
-    # Slide 2
-    This is slide 2
-    ```
-    
-    .slides[
-    
-      .first[
-      ### Slide 1
-      This is slide 1
-      ]
-    
-      .second[
-      ### Slide 2
-      This is slide 2
-      ]
-    ]
-    
-    Regular Markdown rules apply with only a single exception:
-    
-    - A line containing three dashes constitutes a new slide (not a horizontal rule, `<hr />`)
-    
-    Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
-    ]
-    
-    ---
-    
-    .title-left-column[
-    ## How does it work?
-    ### - Markdown
-    ### - Inside HTML
-    ]
-    
-    .content-right-column[
-    
-    A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
-    
-    <!--
-    Notice the &lt; &gt; around the textarea tag if you use the angle brackets instead, it will
-    - work if the markdown is in its own slides.md
-    - completely wrecks remark if hte markdown is inlinedd in the html, because remark will think that it's where the markdown is
-    it's minor because it's only a problem when you use remark to write slides about remark with html code snippets, and easily worked around.
-    -->
-    
-    ```xml
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <style type="text/css">
-          /* Slideshow styles */
-        </style>
-      </head>
-      <body>
-    *    &lt;textarea id="source"&gt;
-          <!-- Slideshow Markdown -->
-         &lt;/textarea&gt;
-        <script>
-    *      var slideshow = remark.create();
-        </script>
-      </body>
-    </html>
-    ```
-    
-    You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
-    ]
-    
-    ---
-    
-    template: inverse
-    
-    ## Of course, Markdown can only go so far.
-    
-    ---
-    
-    .title-left-column[
-    ## Markdown extensions
-    ]
-    
-    .content-right-column[
-    
-    To help out with slide layout and formatting, a few Markdown extensions have been included:
-    
-    - Slide properties, for naming, styling and templating slides
-    
-    - Content classes, for styling specific content
-    
-    - Syntax highlighting, supporting a range of languages
-    ]
-    
-    ---
-    
-    .title-left-column[
-    ## Markdown extensions
-    ### - Slide properties
-    ]
-    
-    .content-right-column[
-    
-    Initial lines containing key-value pairs are extracted as slide properties:
-    
-    ```remark
-    name: agenda
-    class: middle, center
-    
-    # Agenda
-    
-    The name of this slide is {{ name }}.
-    ```
-    
-    Slide properties serve multiple purposes:
-    
-    * Naming and styling slides using properties `name` and `class`
-    
-    * Using slides as templates using properties `template` and `layout`
-    
-    * Expansion of `{{ property }}` expressions to property values
-    
-    See the [complete list](https://github.com/gnab/remark/wiki/Markdown#slide-properties) of slide properties.
-    ]
-    
-    ---
-    
-    .title-left-column[
-    ## Markdown extensions
-    ### - Slide properties
-    ### - Content classes
-    ]
-    
-    .content-right-column[
-    Any occurences of one or more dotted CSS class names followed by square brackets are replaced with the contents of the brackets with the specified classes applied:
-    
-    ```remark
-    .footnote[.red.bold[*] Important footnote]
-    ```
-    
-    Resulting HTML extract:
-    
-    ```xml
-    <span class="footnote">
-      <span class="red bold">*</span> Important footnote
-    </span>
-    ```
-    ]
-    
-    ---
-    
-    .title-left-column[
-    ## Markdown extensions
-    ### - Slide properties
-    ### - Content classes
-    ### - Syntax Highlighting
-    ]
-    
-    .content-right-column[
-    
-    Code blocks can be syntax highlighted by specifying a language from the set of [supported languages](https://github.com/gnab/remark/wiki/Configuration#highlighting).
-    
-    Using [GFM](http://github.github.com/github-flavored-markdown/) fenced code blocks you can easily specify highlighting language:
-    
-    .pull-left[
-    
-    <pre><code>
-    ```javascript
-    function add(a, b)
-      return a + b
-    end
-    ```
-    </code></pre>
-    ]
-    
-    .pull-right[
-    
-    <pre><code>
-    ```ruby
-    def add(a, b)
-      a + b
-    end
-    ```
-    </code></pre>
-    ]
-    
-    A number of highlighting [styles](https://github.com/gnab/remark/wiki/Configuration#highlighting) are available, including several well-known themes from different editors and IDEs.
-    
-    ]
-    
-    ---
-    
-    .title-left-column[
-    ## Presenter mode
-    ]
-    
-    .content-right-column[
-    
-    To help out with giving presentations, a presenter mode comprising the
-    following features is provided:
-    
-    - Display of slide notes for the current slide, to help you remember
-      key points
-    
-    - Display of upcoming slide, to let you know what's coming
-    
-    - Cloning of slideshow for viewing on extended display
-    ]
-    
-    ---
-    
-    .title-left-column[
-      ## Presenter mode
-      ### - Inline notes
-    ]
-    
-    .content-right-column[
-    
-    Just like three dashes separate slides,
-    three question marks separate slide content from slide notes:
-    
-    ```
-    Slide 1 content
-    
-    *???
-    
-    Slide 1 notes
-    
-    ---
-    
-    Slide 2 content
-    
-    *???
-    
-    Slide 2 notes
-    ```
-    
-    Slide notes are also treated as Markdown, and will be converted in the
-    same manner slide content is.
-    
-    Pressing **P** will toggle presenter mode.
-    ]
-    
-    ???
-    
-    Congratulations, you just toggled presenter mode!
-    
-    Now press **P** to toggle it back off.
-    
-    ---
-    
-    .title-left-column[
-    ## Presenter mode
-    ### - Inline notes
-    ### - Cloned view
-    ]
-    
-    .content-right-column[
-    
-    Presenter mode of course makes no sense to the audience.
-    
-    Creating a cloned view of your slideshow lets you:
-    
-    - Move the cloned view to the extended display visible to the audience
-    
-    - Put the original slideshow in presenter mode
-    
-    - Navigate as usual, and the cloned view will automatically keep up with the original
-    
-    Pressing __C__ will open a cloned view of the current slideshow in a new
-    browser window.
-    ]
-    
-    ---
-    
-    template: inverse
-    
-    ## It's time to get started!
-    
-    ---
-    
-    .title-left-column[
-    ## Getting started
-    ]
-    
-    .content-right-column[
-    
-    Getting up and running is done in only a few steps:
-    
-    1. Visit the [project site](http://github.com/gnab/remark)
-    
-    2. Follow the steps in the Getting Started section
-    
-    For more information on using remark, please check out the [wiki](https://github.com/gnab/remark/wiki) pages.
-    ]
-    
-    ---
-    
-    # Images
-    
-    some text
-    
-    <img src="remark-playground/ruins.jpg" width="100%">
-    
-    some text
-    
-    ---
-    
-    # Test fonts
-    
-    # H1: regular, *italic*, **bold**
-    ## H2: regular, *italic*, **bold**
-    ### H3: regular, *italic*, **bold**
-    
-    body: regular, *italic*, **bold**
-    
-    ```javascript
-    var x = 0;
-    ```
-    
-    ---
-    
-    # Test 50-50 columns
-    
-    .two-columns-left[
-    ## My title left
-    
-    - bullet 1, **bullet 1**, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1
-    
-    - bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2
-    ]
-    
-    .two-columns-right[
-    ## My title right
-    
-    - bullet 1, **bullet 1**, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1
-    
-    - bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2
-    ]
-    
-    ---
-    
-    # Test 50-50 columns
-    
-    .two-columns-left[
-    ## My title left
-    
-    - bullet 1, **bullet 1**, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1, bullet 1
-    
-    - bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2, bullet 2
-    ]
-    
-    .two-columns-right[
-    
-    <!-- do not use ![](remark-playground/ruins.jpg) because it's unclear how to set width -->
-    <img src="remark-playground/ruins.jpg" width="100%">
-    
-    ]
-    
-    ---
-    
-    class: center, middle, inverse
-    background-image: url(remark-playground/ruins.jpg)
-    background-size: cover
-    
-    # Background image
-    
-    ---
-    
-    class: center, middle
-    background: radial-gradient(white, cyan)
-    
-    # Background gradient
-    
-    ---
-    
-    # Title
-    
-    --
-    - bullet point fragment
-    
-    
-    --
-    - bullet point fragment
-    
-    
-    --
-    - bullet point fragment
-    
-    ---
-    
-    <!-- layout: true sets this as the default template -->
-    
-    layout: true
-    class: center, middle, inverse
-    
-    ---
-    
-    # slide with layout
-    
-    ---
-    
-    # another slide with layout
-    
-    ---
-    
-    <!-- layout: false restes to the default template -->
-    
-    layout: false
-    
-    name: last-page
-    template: inverse
-    
-    ## That's all folks (for now)!
-    
-    Slideshow created using [remark](http://github.com/gnab/remark).
+
 
   </textarea>
   <!-- modified to point to our local copy -->
